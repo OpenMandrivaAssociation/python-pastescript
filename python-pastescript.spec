@@ -1,7 +1,7 @@
 %define tarname PasteScript
 %define name	python-pastescript
 %define version	1.7.3
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary:	A pluggable command-line frontend
 Name:		%{name}
@@ -15,6 +15,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	python-paste >= 1.3
 Requires:	python-pastedeploy
+Requires:	python-pkg-resources
 BuildRequires:	python-setuptools, python-sphinx
 BuildRequires:	python-pastedeploy
 
