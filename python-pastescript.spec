@@ -1,7 +1,7 @@
 %define tarname PasteScript
 %define name	python-pastescript
 %define version	1.7.3
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	A pluggable command-line frontend
 Name:		%{name}
