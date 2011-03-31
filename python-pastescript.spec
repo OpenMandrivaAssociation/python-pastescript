@@ -13,8 +13,10 @@ Group:		Development/Python
 Url:		http://pythonpaste.org/script/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
-Requires:	python-paste
+Requires:	python-paste >= 1.3
+Requires:	python-pastedeploy
 BuildRequires:	python-setuptools, python-sphinx
+BuildRequires:	python-pastedeploy
 
 %description
 PasteScript is a pluggable command-line tool. Included features:
@@ -39,5 +41,3 @@ sphinx-build -b html docs html
 %files -f FILE_LIST
 %defattr(-,root,root)
 %doc html/
-
-
