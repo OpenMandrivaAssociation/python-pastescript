@@ -5,9 +5,9 @@
 
 Summary:	A pluggable command-line frontend
 Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-Source0:	http://pypi.python.org/packages/source/P/%{tarname}/%{tarname}-%{version}.tar.gz
+Version:	1.7.5
+Release:	1
+Source0:	http://pypi.python.org/packages/source/P/PasteScript/PasteScript-%{version}.tar.gz
 License:	MIT 
 Group:		Development/Python
 Url:		http://pythonpaste.org/script/
@@ -52,5 +52,6 @@ sed -i 's/.*egg-info$//' FILE_LIST
 * Tue Nov 09 2010 Lev Givon <lev@mandriva.org> 1.7.3-1mdv2011.0
 + Revision: 595414
 - import python-pastescript
+
 
 
