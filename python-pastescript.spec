@@ -1,12 +1,9 @@
 %define tarname PasteScript
-%define name	python-pastescript
-%define version	1.7.3
-%define release 4
 
 Summary:	A pluggable command-line frontend
-Name:		%{name}
+Name:		python-pastescript
 Version:	1.7.5
-Release:	1
+Release:	2
 Source0:	http://pypi.python.org/packages/source/P/PasteScript/PasteScript-%{version}.tar.gz
 License:	MIT 
 Group:		Development/Python
@@ -34,24 +31,8 @@ PasteScript is a pluggable command-line tool. Included features:
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
 sphinx-build -b html docs html
 sed -i 's/.*egg-info$//' FILE_LIST
+sed -i 's@tests/__init__py$@@' FILE_LIST
+rm -f %{py_puresitedir}/tests/__init__.py
 
 %files -f FILE_LIST
-%defattr(-,root,root)
 %doc html/
-
-
-%changelog
-* Thu Mar 31 2011 Lev Givon <lev@mandriva.org> 1.7.3-3mdv2011.0
-+ Revision: 649509
-- Require pkg_resources.
-
-* Thu Mar 31 2011 Lev Givon <lev@mandriva.org> 1.7.3-2
-+ Revision: 649469
-- Fix dependencies.
-
-* Tue Nov 09 2010 Lev Givon <lev@mandriva.org> 1.7.3-1mdv2011.0
-+ Revision: 595414
-- import python-pastescript
-
-
-
