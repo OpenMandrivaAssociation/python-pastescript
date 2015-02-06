@@ -3,7 +3,7 @@
 Summary:	A pluggable command-line frontend
 Name:		python-pastescript
 Version:	1.7.5
-Release:	2
+Release:	3
 Source0:	http://pypi.python.org/packages/source/P/PasteScript/PasteScript-%{version}.tar.gz
 License:	MIT 
 Group:		Development/Python
