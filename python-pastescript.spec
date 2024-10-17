@@ -7,7 +7,7 @@ Release:	3
 Source0:	http://pypi.python.org/packages/source/P/PasteScript/PasteScript-%{version}.tar.gz
 License:	MIT 
 Group:		Development/Python
-Url:		http://pythonpaste.org/script/
+Url:		https://pythonpaste.org/script/
 BuildArch:	noarch
 Requires:	python-paste >= 1.3
 Requires:	python-pastedeploy
